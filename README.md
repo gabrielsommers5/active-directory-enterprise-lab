@@ -21,7 +21,7 @@ During the initial VM provisioning, a desynchronization occurred between the Vir
 
 Instead of relying on the GUI, I utilized the `VBoxManage` command-line tool to interface directly with the master registry. By querying the database and manually unregistering the corrupted UUID, I successfully restored functionality without data loss.
 
-![VBox CLI Troubleshooting](images/VBox-Manage-Command-Line-Fix)
+![VBox CLI Troubleshooting](images/VBox-Manage-Command-Line-Fix.png)
 
 ---
 
