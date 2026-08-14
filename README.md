@@ -33,7 +33,7 @@ To ensure consistent DNS resolution and reliable connectivity for the domain, th
 * **Subnet Mask:** 255.255.255.0
 * **DNS Server:** 127.0.0.1 (Local loopback)
 
-[INSERT SCREENSHOT HERE: IPv4 Properties window showing the 192.168.10.10 and loopback configuration]
+![Windows Server IPv4 Properties](images/IPv4-Properties)
 
 ---
 
@@ -44,14 +44,14 @@ With the network foundation established, the server's identity was configured (H
 ### 1. Role Installation
 Successfully provisioned the AD DS role binaries onto the server.
 
-[INSERT SCREENSHOT HERE: Server Manager screen showing successful AD DS role installation]
+[AD DS role provisioned](images/ADDS-Roles-Provisioned)
 
 ### 2. Domain Controller Promotion
-Configured a new forest root domain named `corp.local`. Validated system compatibility and passed all internal prerequisite checks prior to database generation.
+Configured a new forest root domain named `corp.local`. Validated system compatibility, passed all internal prerequisite checks, and generated the NTDS database. Verified service health post-reboot via Server Manager.
 
-[INSERT SCREENSHOT HERE: The AD Wizard screen showing the green checkmark "All prerequisite checks passed successfully"]
+![AD DS Health Dashboard](images/ad-ds-health-dashboard)
 
 ### 3. Verification
 Following the final domain build and system reboot, the server successfully authenticated against the new domain database, confirming `DC-01` is now the master Domain Controller for `corp.local`.
 
-[INSERT SCREENSHOT HERE: The Windows login screen showing "CORP\Administrator"]
+![Windows Server CORP Login](images/corpadministrator)
