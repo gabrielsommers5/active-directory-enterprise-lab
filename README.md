@@ -44,7 +44,7 @@ With the network foundation established, the server's identity was configured (H
 ### 1. Role Installation
 Successfully provisioned the AD DS role binaries onto the server.
 
-[AD DS role provisioned](images/ADDS-Roles-Provisioned.png)
+![AD DS role provisioned](images/ADDS-Roles-Provisioned.png)
 
 ### 2. Domain Controller Promotion
 Configured a new forest root domain named `corp.local`. Validated system compatibility, passed all internal prerequisite checks, and generated the NTDS database. Verified service health post-reboot via Server Manager.
