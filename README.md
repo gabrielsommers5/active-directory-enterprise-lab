@@ -55,3 +55,16 @@ Configured a new forest root domain named `corp.local`. Validated system compati
 Following the final domain build and system reboot, the server successfully authenticated against the new domain database, confirming `DC-01` is now the master Domain Controller for `corp.local`.
 
 ![Windows Server CORP Login](images/corpadministrator.png)
+
+## 📍 Phase 4: Dynamic Network Services (DHCP)
+
+To automate IP assignment and ensure proper DNS routing for client machines joining the domain, the DHCP Server role was deployed and authorized within Active Directory.
+
+An IPv4 scope was configured to assign addresses to the Client subnet while specifically pointing the DHCP DNS option (Option 006) back to the Domain Controller for domain resolution.
+
+* **Scope Name:** Corp-Client-Subnet
+* **IP Range:** 192.168.10.100 - 192.168.10.200
+* **DNS Routing:** 192.168.10.10 (Points to DC-01)
+
+![DHCP IP Range](images/dhcp-range.png)
+![Active DHCP Scope](images/dhcp-scope-active.png)
