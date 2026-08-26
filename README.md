@@ -68,3 +68,14 @@ An IPv4 scope was configured to assign addresses to the Client subnet while spec
 
 ![DHCP IP Range](images/dhcp-range.png)
 ![Active DHCP Scope](images/dhcp-scope-active.png)
+
+## 🚀 Phase 5: Client Provisioning & Domain Join
+
+Provisioned a Windows 11 Enterprise endpoint on the `AD-Lab-Net` internal network. Bypassed the consumer OOBE (Out-Of-Box Experience) to establish a local admin account.
+
+* **DHCP & DNS Verification:** Utilized the command line (`ipconfig /all`) to verify the client successfully pulled an IP lease (`192.168.10.100`) and the correct DNS routing (`192.168.10.10`) from the server.
+* **Domain Integration:** Connected the client to the `corp.local` domain via `sysdm.cpl`, successfully authenticating against the Active Directory database using Domain Admin credentials.
+
+![Domain Join Success](images/domain-join-success.png)
+
+---
