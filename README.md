@@ -79,3 +79,16 @@ Provisioned a Windows 11 Enterprise endpoint on the `AD-Lab-Net` internal networ
 ![Domain Join Success](images/domain-join-success.png)
 
 ---
+
+## 👥 Phase 6: Identity and Access Management (IAM)
+
+Established foundational Helpdesk and system administration capabilities using Active Directory Users and Computers (ADUC).
+
+* **Organizational Design:** Created an `IT-Department` Organizational Unit (OU) to logically manage technical staff and apply targeted policies.
+* **User Provisioning:** Provisioned a standard domain user account (`gabriel`) with secure password configurations.
+* **Authentication Verification:** Successfully logged into the Windows 11 endpoint using the domain credentials, verifying AD DS authentication and network profile generation.
+
+![Active Directory User Provisioning](images/ad-user-provisioning.png)
+![Client User Logon Confirmation](images/client-user-logon.png)
+
+---
