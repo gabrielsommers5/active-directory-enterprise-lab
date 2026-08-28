@@ -91,4 +91,7 @@ Established foundational Helpdesk and system administration capabilities using A
 ![Active Directory User Provisioning](images/ad-user-provisioning.png)
 ![Client User Logon Confirmation](images/client-user-logon.png)
 
+* **Role-Based Access Control (RBAC):** Escalated standard user privileges by assigning the account to the `Domain Admins` security group, granting network-wide administrative rights while maintaining the principle of least privilege for daily tasks.
+
+![Active Directory Escalating Privileges](images/privilege-escalation.png)
 ---
