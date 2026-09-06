@@ -104,4 +104,7 @@ Configured centralized network storage and automated resource mapping using Grou
 
 ![SMB Share Provisioning](images/smb-share.png)
 
+* **Group Policy Deployment:** Created and linked a Group Policy Object (`Map-CorpData-Drive`) to the `IT-Department` OU. Utilized Group Policy Preferences to automatically map the SMB share to the `Z:` drive upon user logon, validating the deployment via `gpupdate /force` on the client endpoint.
+
+![Group Policy Drive Map](images/gpo-drive-map.png)
 ---
