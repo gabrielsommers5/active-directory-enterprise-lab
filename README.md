@@ -108,3 +108,20 @@ Configured centralized network storage and automated resource mapping using Grou
 
 ![Group Policy Drive Map](images/gpo-drive-map.png)
 ---
+## 🛡️ Phase 8: Enterprise Security Hardening
+
+Configured and deployed domain-wide security controls to mitigate identity-based attacks and unauthorized network access.
+
+* **Threat Mitigation:** Modified the Default Domain Policy to enforce a strict Account Lockout threshold (5 invalid attempts / 30-minute reset) across all `corp.local` endpoints.
+
+![Account Lockout GPO](images/account-lockout-gpo.png)
+
+* **Security Validation:** Simulated a local brute-force authentication attack against the Windows 11 client to trigger the defense mechanism and validate the GPO deployment.
+  
+![Account Lockout Attempt](images/account-lockout-attempt.png)
+
+* **Incident Remediation:** Utilized Active Directory Users and Computers (ADUC) to audit the tripped security flag and manually restore account access, demonstrating identity remediation procedures.
+
+![Unlocking User Account](images/unlock-user-account.png)
+
+---
