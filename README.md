@@ -95,3 +95,13 @@ Established foundational Helpdesk and system administration capabilities using A
 
 ![Active Directory Escalating Privileges](images/privilege-escalation.png)
 ---
+## 📁 Phase 7: Resource Management & Group Policy (GPO)
+
+Configured centralized network storage and automated resource mapping using Group Policy.
+
+* **Enterprise Storage Provisioning:** Deployed a centralized SMB file share (`CorpData`) using Windows Server File and Storage Services.
+* **Security Hardening:** Enabled Access-Based Enumeration (ABE) on the network share to restrict directory visibility strictly to authorized users.
+
+![SMB Share Provisioning](images/smb-share.png)
+
+---
